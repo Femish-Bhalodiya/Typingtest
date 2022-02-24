@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typinng simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+    <link rel="manifest" href="Favicons/site.webmanifest">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            Test Your Typing Skills
+        </div>
+        <div class="section">
+            <div class="speed">
+                <div class="text">WPM</div>
+                <div class="current_speed">100</div>
+            </div>
+            <div class="char">
+                <div class="text">CPM</div>
+                <div class="current_cpm">100</div>
+            </div>
+            <div class="error">
+                <div class="text">Error</div>
+                <div class="current_error">0</div>
+            </div>
+            <div class="time">
+                <div class="text">Time</div>
+                <div class="current_time">60s</div>
+            </div>
+            <div class="accuracy">
+                <div class="text">Accuracy</div>
+                <div class="current_accuracy">100%</div>
+            </div>
+        </div>
+        <div id="start">
+
+        </div>
+        <textarea class="text_Area" placeholder="Type" oninput="processing()" onfocus="startGame()"></textarea>
+        <div class="start" onclick="processing()">
+            Start
+        </div>
+        <button class="btn" onclick="reset()" onclick="processing()">
+            <div class="adjustment">Restart</div>
+        </button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
